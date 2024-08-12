@@ -17,7 +17,7 @@ class _AnimatedCirclesScreenState extends State<AnimatedCirclesScreen>
     super.initState();
 
     _controller = AnimationController(
-      duration: const Duration(seconds: 1),
+      duration: const Duration(milliseconds: 1),
       vsync: this,
     )..repeat(reverse: true);
 
@@ -49,9 +49,7 @@ class _AnimatedCirclesScreenState extends State<AnimatedCirclesScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Advanced Animation Example'),
-      ),
+     
       body: Stack(
         children: [
           AnimatedBuilder(
