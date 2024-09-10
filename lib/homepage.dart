@@ -28,7 +28,7 @@ class _AnimatedCirclesScreenState extends State<AnimatedCirclesScreen>
       ),
     );
 
-    _colorAnimation = ColorTween(begin: Colors.blue, end: Colors.red).animate(
+    _colorAnimation = ColorTween(begin: Colors.blue[800], end: Colors.red[800]).animate(
       CurvedAnimation(
         parent: _controller,
         curve: Curves.easeInOut,
